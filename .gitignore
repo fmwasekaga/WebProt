@@ -1,0 +1,11 @@
+.vs/
+packages/
+WebProt/obj/
+WebProt/bin/
+WebProt/certificates/
+Logging.io/bin/
+Logging.io/obj/
+Plugable.io/bin/
+Plugable.io/obj/
+Plugins/
+ThirdParty/
