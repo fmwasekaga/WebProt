@@ -6,8 +6,7 @@ WebProt/certificates/
 Logging.io/bin/
 Logging.io/obj/
 Plugable.io/bin/
-Plugable.io/obj/
-Plugins/
+Plugable.io/obj
 ThirdParty/
 WebProt_dev.sln
 WebProt/WebProt_dev.csproj
