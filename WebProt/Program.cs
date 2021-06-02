@@ -17,6 +17,7 @@ namespace WebProt
                 System.IO.Path.Combine(Environment.CurrentDirectory, "extensions")
                     .GetPlugable(typeof(Program).Assembly.GetName().Name).OfType<IProtocolProvider>().ToList(), args);
             server.Start();
+            Console.WriteLine("----------------------------------------------------------------------------");
 
             Console.CancelKeyPress += delegate (object sender, ConsoleCancelEventArgs e)
             {
