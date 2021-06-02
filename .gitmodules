@@ -16,3 +16,6 @@
 [submodule "ThirdParty/WebsocketSharp"]
 	path = ThirdParty/WebsocketSharp
 	url = https://github.com/fmwasekaga/websocket-sharp.git
+[submodule "ThirdParty/CommandLineParser"]
+	path = ThirdParty/CommandLineParser
+	url = https://github.com/fmwasekaga/CommandLineParser.git
