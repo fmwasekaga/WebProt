@@ -19,6 +19,3 @@
 [submodule "ThirdParty/CommandLineParser"]
 	path = ThirdParty/CommandLineParser
 	url = https://github.com/fmwasekaga/CommandLineParser.git
-[submodule "ThirdParty/CurlThin"]
-	path = ThirdParty/CurlThin
-	url = https://github.com/fmwasekaga/CurlThin.git
