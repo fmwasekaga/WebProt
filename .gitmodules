@@ -1,0 +1,3 @@
+[submodule "Plugins/WebProt.WebHttp.Provider"]
+	path = Plugins/WebProt.WebHttp.Provider
+	url = https://github.com/fmwasekaga/WebProt.WebHttp.Provider.git
