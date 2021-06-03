@@ -10,3 +10,6 @@
 [submodule "Plugins/WebProt.WebSocket.Provider"]
 	path = Plugins/WebProt.WebSocket.Provider
 	url = https://github.com/fmwasekaga/WebProt.WebSocket.Provider.git
+[submodule "ThirdParty/uhttpsharp"]
+	path = ThirdParty/uhttpsharp
+	url = https://github.com/fmwasekaga/uhttpsharp.git

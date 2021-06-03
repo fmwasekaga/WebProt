@@ -9,4 +9,5 @@ Plugable.io/bin/
 Plugable.io/obj
 WebProt_dev.sln
 WebProt/WebProt_dev.csproj
-ThirdParty/
+ThirdParty/uhttpsharp/uhttpsharp/bin/
+ThirdParty/uhttpsharp/uhttpsharp/obj
