@@ -27,3 +27,57 @@ This loads all .zip plugins from an "extension" directory
 			.OfType<IProtocolProvider>().ToList(), args);
               server.Start();
 ```
+
+IPlugable is needed to be recognized by the plugin manager as a plugin and IProtocolProvider
+is used to initialize it
+
+```c#
+using Plugable.io;
+using Plugable.io.Interfaces;
+using System;
+using System.Reflection;
+
+namespace Extensions
+{
+    public class Plugin : IPlugable, IProtocolProvider
+    {
+        public void Initialize(string[] args, PluginsManager server)
+        {
+            if (args.Length > 0)
+            {
+                AppDomain.CurrentDomain.AssemblyResolve += ResolveAssembly;
+            }
+        }
+
+        public string getName()
+        {
+            return GetType().Assembly.GetName().Name;
+        }
+
+        public string getVersion()
+        {
+            return GetType().Assembly.GetName().Version.ToString();
+        }
+
+        public void Message(dynamic message)
+        {
+
+        }
+
+        public Assembly ResolveAssembly(object sender, ResolveEventArgs args)
+        {
+            return null;
+        }
+
+        public void Start()
+        {
+            
+        }
+
+        public void Stop()
+        {
+           
+        }
+    }
+}
+```
