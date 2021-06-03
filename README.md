@@ -24,6 +24,6 @@ This loads all .zip plugins from an "extension" directory
  var server = new PluginsManager(
               System.IO.Path.Combine(Environment.CurrentDirectory, "extensions")
                    .GetPlugable(typeof(Program).Assembly.GetName().Name)
-						.OfType<IProtocolProvider>().ToList(), args);
+			.OfType<IProtocolProvider>().ToList(), args);
               server.Start();
 ```
