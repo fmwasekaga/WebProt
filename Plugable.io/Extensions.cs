@@ -334,7 +334,8 @@ namespace Plugable.io
 
                                         implementors.Add(o);
 
-                                        _cache[Path.GetFileName(f)].Add(Path.GetFileName(entry.FullName), o);
+                                        if(!_cache[Path.GetFileName(f)].ContainsKey(Path.GetFileName(entry.FullName)))
+                                            _cache[Path.GetFileName(f)].Add(Path.GetFileName(entry.FullName), o);
                                     }
                                 }
                                 catch (Exception ex)

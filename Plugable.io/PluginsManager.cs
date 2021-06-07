@@ -33,6 +33,18 @@ namespace Plugable.io
         public PluginsManager(IList<IProtocolProvider> providers, string[] args)
             : this()
         {
+            Use(providers, args);
+        }
+        #endregion
+
+        #region Use
+        public void Use(IProtocolProvider provider)
+        {
+            _providers.Add(provider);
+        }
+
+        public void Use(IList<IProtocolProvider> providers, string[] args)
+        {
             if (providers != null)
             {
                 foreach (var plugin in providers)
@@ -60,13 +72,6 @@ namespace Plugable.io
                     }
                 }
             }
-        }
-        #endregion
-
-        #region Use
-        public void Use(IProtocolProvider provider)
-        {
-            _providers.Add(provider);
         }
         #endregion
 
